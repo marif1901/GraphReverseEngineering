@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Visual Analytics</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./static/css/w3.css">
+<link rel="stylesheet" href="./static/css/project.css">
+<link rel="stylesheet" href="./static/css/fonts.css">
+<link rel="stylesheet" href="./static/css/font-awesome.min.css">
+<script src="./static/js/d3.v5.min.js" charset="utf-8"></script>
+<script src="./static/js/d3-scale-chromatic.v1.min.js"></script>
+<script src="./static/js/jquery-3.4.1.min.js"></script>
+<script src="./static/js/d3.tip.v0.6.3.js"></script>
+<script src="./static/js/dataset.js"></script>
+
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <!-- <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i> &nbsp;Menu</button> -->
+  <span class="w3-bar-item w3-left">CSE523 -  Advanced Project</span>
+  <span class="w3-bar-item w3-right">Color Properties</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="./static/image/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+    <br>
+      <span>Graph Reverse Engineering</span><br>
+      <span>ID: 112669645</span>
+      <br>
+      <span>ID: 112716642</span>
+      <span>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="AdvancedProject" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>&nbsp; Advanced Project Dashboard</a>
+    <a href="success" class="w3-bar-item w3-button w3-padding"><i class="fa fa-database fa-fw"></i>&nbsp; Predicted Labels</a>
+    <a href="Coordinates" class="w3-bar-item w3-button w3-padding"><i class="fa fa-database fa-fw"></i>&nbsp; Predicted Coordinates</a>
+    <a href="Color" class="w3-bar-item w3-button w3-padding w3-blue "><i class="fa fa-database fa-fw"></i>&nbsp; Image Color Properties</a>
+    <button id="close-vis" onclick='window.location.replace("./templates/close.html");' >EXIT</button>
+    <br><br>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-dark-grey" style="margin-left:300px;margin-top:43px;height: 52em;">
+  <!-- Header -->
+  <header class="w3-container" >
+    <h2><b><i class="fa fa-search"></i> Color Properties</b></h2>
+  </header>
+
+
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="w3-container"  style="width:500px; margin:0 auto;">
+    
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white" id="dataset_table" align="center">
+  
+  {% for table in tables %}
+    <!-- {{titles[loop.index]}} -->
+    {{ table|safe }}
+  {% endfor %}
+    </table>
+
+  </div>
+ <!--  <br>
+    <div class="w3-container"  style="width:700px; margin:0 auto;">
+  
+    
+    <img src="{{ user_image }}" alt="User Image" height="400" width="400" style='border:3px solid #000000'>
+  </div> -->
+
+  
+
+  <!-- Footer -->
+  <!-- End page content -->
+</div>
+</body></html>
