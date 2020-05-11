@@ -1,0 +1,364 @@
+html{
+  /* overflow: hidden; */
+}
+
+
+
+
+
+#main_bar_svg{
+	margin-left: 30%
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 11%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.feature > div:first-child:hover {
+  background-color: : red;
+  cursor: pointer;  
+}
+
+.highlight-selected{
+  background-color: white !important;
+  color: black !important;
+}
+
+#dataset_table_random > thead{
+  display: block;
+  overflow: scroll;
+  width: 58em !important;
+  height: 52em;
+  font-size: 12px;
+}
+
+#dataset_table_random > thead > tr:first-child {
+      background: #1f1d1df0;
+      vertical-align: middle;
+      text-align: center;
+      color: white;
+}
+
+#dataset_table_random {
+  text-align: center;
+}
+
+#dataset_table_strat > thead{
+  display: block;
+  overflow: scroll;
+  width: 45em !important;
+  height: 42em;
+  font-size: 12px;
+}
+
+#dataset_table_strat > thead > tr:first-child {
+  background: #1f1d1df0;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+
+#dataset_table_strat{
+  text-align: center;
+}
+
+.svg_text{
+  font-family: 'Times New Roman';
+}
+
+#vibrating-title{
+  width: fit-content;
+  position: relative;
+  /* animation: myfirst 0.7s infinite; */
+  /*animation-direction: normal;*/
+  cursor: pointer;
+}
+
+@keyframes myfirst {
+  0%   { left: 0px; top: 0px;}
+  50%  { left: 15px; top: 0px;}
+  100% { left: 0px; top: 0px;}
+}
+
+#home_text{
+  margin:5% 33%;
+  width: 54%;
+  font-size: 25px;
+  animation: mysecond 0.7s 1;
+  animation-direction: normal;
+}
+
+@keyframes mysecond {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+
+.overlay {  
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+  }
+
+.overlay-desc{
+    color: white;
+    width: 50%;
+    height: 70%;
+    margin-left: 25%;
+    margin-top: 16%;
+    text-align: center;
+}
+
+#overlay-dismiss{
+    cursor: pointer;
+    margin-top: 2% !important;
+    width: 12em !important;
+    height: 3em !important;
+    font-size: 20px;
+    border: 1px solid #616161;
+    border-radius: 2px;
+    color: white;
+    background: #616161;
+}
+
+#overlay-dismiss:hover{
+  opacity: 0.8
+}
+
+#close-vis{
+  display: inline;
+    margin-left: 30%;
+    margin-top: 12%;
+    padding: 1%;
+    width: 6em;
+    font-size: 18px;
+    border: 0;
+    border-radius: 0;
+    color: white;
+    background: black;
+    margin-top: 24em !important;
+}
+
+#close-vis:hover{
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+text{
+  user-select: none;
+}
+
+.feature-cell{
+  background: black;
+}
+
+.feature-cell:hover{
+  background: white;
+  color: black;
+}
+
+#cluster_k {
+  color: black;
+}
+
+#feature_k {
+  color: black;
+}
+
+#elbow_graph{
+  width: 95%;
+}
+
+#scree_graph_comparison {
+  width: 100%;
+}
+
+#scree_graph{
+  width: 80%;
+}
+
+#feature_menu{
+  margin-top:0.5em
+}
+
+#graph_area{
+  text-align: center;
+}
+
+#stratified_section_top {
+  text-align: center;
+  /* margin-bottom: 1em; */
+}
+
+.loader {
+  z-index: 100;
+  position: absolute;
+  margin-top: 50vh;
+  margin-left: 50%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#subtasks_div .feature-cell{
+  background: unset;
+}
+
+#left_svg{
+  width: 95%;
+  height: 450px;
+  background: black;
+}
+
+#left_svg_plot{
+  width: 800px;
+  height: 500px;
+  /* background: black; */
+}
+
+#right_svg{
+  width: 95%;
+  height: 450px;
+  background: black;
+}
+
+.line {
+  fill: none;
+  stroke: #ffab00;
+  stroke-width: 3;
+}
+
+.line1 {
+  fill: none;
+  stroke: #ffab00;
+  stroke-width: 2;
+}
+
+.line2 {
+  fill: none;
+  stroke: green;
+  stroke-width: 2;
+}
+
+.line3 {
+  fill: none;
+  stroke:red;
+  stroke-width: 2;
+}
+.overlay {
+fill: none;
+pointer-events: all;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+  fill: #ffab00;
+  stroke: #ffab00;
+  cursor: pointer;
+}
+
+.focus circle {
+fill: none;
+stroke: steelblue;
+}
+
+#left_part{
+  margin-top: 2em;
+  padding: 2em;
+  background: black;
+}
+
+#right_part{
+  margin-top: 2em;
+  padding: 2em;
+  background: black;
+}
+
+
+.x.axis line {
+  stroke: white !important;
+}
+
+.y.axis line {
+  stroke: white !important;
+}
+
+#stratified_section_bottom{
+    min-height: 0;
+    text-align: center;
+    background: black;
+    padding: 0 0 1em 0;
+    font-size: 14pt;
+}

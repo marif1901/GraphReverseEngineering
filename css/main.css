@@ -1,0 +1,89 @@
+/*Bar chart*/
+.chart {
+    background-color: #eee;
+}
+
+.chart rect {
+	stroke: white;
+    fill: steelblue;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+    shape-rendering: crispEdges;
+}
+
+.x.axis line {
+    stroke: black;
+}
+
+.y.axis line {
+    stroke: black;
+}
+
+.axis text {
+    font-size: 12px;
+}
+
+/*Pie chart*/
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+/*Force chart*/
+.node {
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+.link {
+    stroke: #777;
+    stroke-width: 2px;
+}
+
+/*Navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+    text-align:center;
+}
+
+li {
+    float: left;
+     display:inline-block;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+/*Align heading*/
+h1 {
+    text-align: center;
+}
+
