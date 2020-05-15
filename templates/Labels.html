@@ -22,7 +22,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
   <!-- <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i> &nbsp;Menu</button> -->
   <span class="w3-bar-item w3-left">CSE523 -  Advanced Project</span>
-  <span class="w3-bar-item w3-right">Color Properties</span>
+  <span class="w3-bar-item w3-right">Predicted Labels</span>
 </div>
 
 <!-- Sidebar/menu -->
@@ -46,10 +46,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="AdvancedProject" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>&nbsp; Advanced Project Dashboard</a>
-    <a href="success" class="w3-bar-item w3-button w3-padding"><i class="fa fa-database fa-fw"></i>&nbsp; Predicted Labels</a>
-            <a href="Labels" class="w3-bar-item w3-button w3-padding"><i class="fa fa-database fa-fw"></i>&nbsp; Chart Labels</a>
-    <a href="Coordinates" class="w3-bar-item w3-button w3-padding"><i class="fa fa-database fa-fw"></i>&nbsp; Predicted Coordinates</a>
-    <a href="Color" class="w3-bar-item w3-button w3-padding w3-blue "><i class="fa fa-database fa-fw"></i>&nbsp; Image Color Properties</a>
+    <a href="success" class="w3-bar-item w3-button w3-padding w3"><i class="fa fa-database fa-fw"></i>&nbsp; Predicted Labels</a>
+        <a href="Labels" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-database fa-fw"></i>&nbsp; Chart Labels</a>
+    <a href="Coordinates" class="w3-bar-item w3-button w3-padding "><i class="fa fa-database fa-fw"></i>&nbsp; Predicted Coordinates</a>
+    <a href="Color" class="w3-bar-item w3-button w3-padding "><i class="fa fa-database fa-fw"></i>&nbsp; Image Color Properties</a>
+
     <button id="close-vis" onclick='window.location.replace("./templates/close.html");' >EXIT</button>
     <br><br>
   </div>
@@ -63,7 +64,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-main w3-dark-grey" style="margin-left:300px;margin-top:43px;height: 52em;">
   <!-- Header -->
   <header class="w3-container" >
-    <h2><b><i class="fa fa-search"></i> Color Properties</b></h2>
+    <h2><b><i class="fa fa-search"></i> Predicted Labels</b></h2>
   </header>
 
 
@@ -90,12 +91,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </table>
 
   </div>
- <!--  <br>
+  <br>
     <div class="w3-container"  style="width:700px; margin:0 auto;">
   
     
     <img src="{{ user_image }}" alt="User Image" height="400" width="400" style='border:3px solid #000000'>
-  </div> -->
+  </div>
 
   
 
